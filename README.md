@@ -2,6 +2,7 @@ This is a simple demo that shows how to draw and style the following shapes in G
 * Circle
 * Polyline
 * Polygon
+
 There are two modules:  
 * app: Kotlin implementation
 * java: Java implementation
