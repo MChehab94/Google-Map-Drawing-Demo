@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+
+    <LinearLayout
+        style="@style/generic"
+        android:background="#F2F2F2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/generic"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPolyline"
+                style="@style/button"
+                android:text="Connect Polyline" />
+
+            <Button
+                android:id="@+id/buttonPolygon"
+                style="@style/button"
+                android:text="Connect Polygon" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                style="@style/button"
+                android:text="Reset Map" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarRed"
+            style="@style/seekbar"
+            android:progressBackgroundTint="#FF0000"
+            android:progressTint="#FF0000" />
+
+        <SeekBar
+            android:id="@+id/seekBarGreen"
+            style="@style/seekbar"
+            android:progressBackgroundTint="#00FF00"
+            android:progressTint="#00FF00" />
+
+        <SeekBar
+            android:id="@+id/seekBarBlue"
+            style="@style/seekbar"
+            android:progressBackgroundTint="#0000FF"
+            android:progressTint="#0000FF" />
+
+        <TextView
+            style="@style/generic"
+            android:layout_marginStart="8dp"
+            android:text="Stroke Width" />
+
+        <SeekBar
+            android:id="@+id/seekBarStrokeWidth"
+            style="@style/generic"
+            android:max="30" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPolygonFill"
+            style="@style/generic"
+            android:text="Fill Polygon?" />
+
+    </LinearLayout>
+
+</FrameLayout>
