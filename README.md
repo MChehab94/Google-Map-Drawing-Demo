@@ -1,4 +1,4 @@
-This is a simple demo that shows how to draw and style the following shapes in Google Maps:
+This is a simple demo that shows how to draw, style and handle click event for the following shapes in Google Maps:
 * Circle
 * Polyline
 * Polygon
